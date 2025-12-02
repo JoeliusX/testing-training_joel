@@ -70,6 +70,10 @@ module.exports = class CartItem {
 
     set #name(value) {
         //TODO Implement this method
+        if (typeof value !== 'string' || !value.trim()) {
+            throw new Error("Name must be a non-empty string");
+        }
+        this.#_name = value;
     }
 
     #validateArticleId(articleId) {
