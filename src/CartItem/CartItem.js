@@ -40,6 +40,8 @@ module.exports = class CartItem {
 
     set quantity(value) {
         //TODO Implement this method
+        this.#validateQuantity(value);
+        this.#_quantity = value;
     }
 
     get price() {
