@@ -25,6 +25,7 @@ module.exports = class CartItem {
 
     get articleId() {
         //TODO Implement this method
+        return this.#_articleId
     }
 
     get name() {
