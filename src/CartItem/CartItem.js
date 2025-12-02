@@ -46,6 +46,7 @@ module.exports = class CartItem {
 
     get price() {
         //TODO Implement this method
+        return this.#_price;
     }
 
     set price(value) {
