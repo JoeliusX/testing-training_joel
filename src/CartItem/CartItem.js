@@ -64,6 +64,8 @@ module.exports = class CartItem {
     //region private methods
     set #articleId(value) {
         //TODO Implement this method
+        this.#validateArticleId(value);
+        this.#_articleId = value;
     }
 
     set #name(value) {
