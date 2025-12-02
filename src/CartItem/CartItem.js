@@ -92,6 +92,9 @@ module.exports = class CartItem {
 
     #validatePrice(price) {
         //TODO Implement this method
+        if (typeof price !== "number" || price < 10) {
+            throw new InvalidPriceException();
+        }
     }
     //endregion private methods
 }
