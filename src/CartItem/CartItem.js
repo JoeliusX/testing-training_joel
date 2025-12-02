@@ -8,6 +8,10 @@ module.exports = class CartItem {
 
     //region private attributes
     //TODO Missing private attributs
+    #_articleId
+    #_name
+    #_quantity
+    #_price
     //endregion private attributes
 
     //region public methods
